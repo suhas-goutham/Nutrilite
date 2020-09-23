@@ -1,2 +1,2 @@
 # Nutrilite
-Co-authored by/other contributor: Suhas Goutham suhas201227@gmail.com
+Co-authored by/other contributor: Smaranita Vasudev smaranitav@gmail.com
