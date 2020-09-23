@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<title>Nutrilite Sign Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+
+
+body{
+background-color:black;
+
+}
+body,h1,h2,h3,h4,h5,h6 { font: 400 15px/1.8 Lato, sans-serif;}
+
+
+
+.text{
+color:teal;
+font-size:26px;
+text-align:center;
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 200px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #333333;
+    color: white;
+}
+input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 200px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #333333;
+    color: white;
+}
+input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 200px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #333333;
+    color: white;
+}
+input[type=submit] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 350px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #000033;
+    color: white;
+}
+input[type=number] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 200px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #333333;
+    color: white;
+}
+
+input[type=reset] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 350px;
+    box-sizing: border-box;
+    border: none;
+    background-color:#000033;
+    color: white;
+}
+
+
+
+.Colour{
+text-align:center;
+font-size:26px;
+color:white;
+letter-spacing:3px;
+}
+.Radio{
+text-align:center;
+font-size:24px;
+color:white;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.navbar {
+    float: right;
+}
+
+li.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li.navbar a:hover:not(.active) {
+    background-color: #111;
+}
+</style>
+<body>
+<ul class="sidenav"> 
+<li class="navbar" style="float:left"><a href="MainPage.jsp"> <i class="fa fa-home" style="font-size:24px"></i></a></li>
+</ul>
+<br>
+  <div class="text">NEW TO NUTRILITE?
+  <br>
+  Enter your details to be a part of Nutrilite.
+  </div>
+  <br>
+<br>
+
+<form action="SignUpServlet" method="post">
+  <div class="Colour">
+  <h3>
+  <label for="fname">Enter First Name:</label>
+  </h3>
+  </div>
+  <input type="text" id="fname" name="fname" required>
+
+  <div class="Colour">
+  <h3>
+  <label for="mname">Enter Middle Name:</label>
+  </h3>
+  </div>
+  <input type="text" id="mname" name="mname">
+
+  <div class="Colour">
+  <h3>
+  <label for="fname">Enter Last Name:</label>
+  </h3>
+  </div>
+  <input type="text" id="lname" name="lname" required>
+   
+  <div class="Colour">
+  <h3>
+  <label for="emailid">Enter Email-Id:</label>
+  </h3>
+  </div>
+  <input type="email" name="emailid" required>
+
+  <div class="Colour">
+  <h3>
+  <label for="psw">Enter password:</label>
+  </h3>
+  </div>
+  <input type="password" id="psw" name="psw" required>
+
+  <div class="Colour">
+  <h3>
+  <label for="psw">Re enter password:</label>
+  </h3>
+  </div>
+  <input type="password" id="psw1" name="psw1" required>
+
+   <div class="Colour">
+  <h3>
+  <label for="gender">Gender:</label>
+  </h3>
+  </div>
+  <div class="Radio">
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  
+  </div>
+
+  <div class="Colour">
+  <h3>
+  <label for="age">Enter your age:</label>
+  </h3>
+  </div>
+  <input type="text" id="age" name="age" required>
+  
+
+  <div class="Colour">
+  <h3>
+  <label for="height">Enter your height in centimeters:</label>
+  </h3>
+  </div>
+  <input type="text" id="height" name="height" required>
+
+  <div class="Colour">
+  <h3>
+  <label for="height">Enter your weight:</label>
+  </h3>
+  </div>
+  <input type="text" id="weight" name="weight" required>
+  <br>
+  <br>
+  <br>
+  <div class="Colour">
+ 
+  <input type="submit" value="REGISTER">
+  <input type="reset" value="RESET">
+  </div>
+  
+  
+</form>
+<br>
+<br>
+
+
+</body>
+</html>
